@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./styles.css">
+
+        <title>SciAstra</title>
+    </head>
+    <body>
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        <!-- Change your profile picture -->
+                        <img src="./perfil.png" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting">Hi, We are</span>
+                    <h1 class="nav__name">SciAstra</h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home' ></i> Home 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i> About
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--=============== MAIN ===============-->
+        <main class="main" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        SciAstra
+                    </a>
+    
+                    <!-- Toggle button -->
+                    <div class="header__toggle" id="header-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!-- When inserting your content into sections, remove the section__height class -->
+            <!--=============== HOME ===============-->
+            <section class="section section__height container" id="home">
+                 <!-- Chatbot container -->
+    <div id="chatbot-container">
+        <div id="chatbot-header">Chat with us</div>
+        <div id="chatbot-body"></div>
+        <div id="user-input">
+            <select id="question-dropdown">
+                <option value="disabled selected">Select a question</option>
+                <option value="what is the origin of sciastra">what is the origin of sciastra?</option>
+                <option value="how many mentors does sciastra currently have, and from which institutes?">how many mentors does sciastra currently have, and from which institutes?</option>
+                <option value="What is sciastra is focus in education?">what is sciastra's focus in education?</option>
+                <option value="Which prestigious institutes does sciastra provide guidance for?">which prestigious institutes does sciastra provide guidance for?</option>
+                <option value="what research entrance exams does sciastra assist students in preparing for?">what research entrance exams does sciastra assist students in preparing for?</option>
+                <option value="how has sciastra grown since its inception?">how has sciastra grown since its inception?</option>
+                <option value="what role do mentors from renowned institutes play in sciastra?">what role do mentors from renowned institutes play in sciastra?</option>
+                <option value="what is sciastra is philosophy regarding competitive exams?">what is sciastra's philosophy regarding competitive exams?</option>
+                <option value="name a few services provided by sciastra.">name a few services provided by sciastra.</option>
+                <option value="what is sciastra is vision for the future?">what is sciastra is vision for the future?</option>
+                <option value="how did sciastra start its journey">how did sciastra start its journey?</option>
+                <option value="what is sciastra approach to education?">  what is sciastra approach to education?</option>
+                <option value="which research entrance exams does sciastra assist students in preparing for?"> which research entrance exams does sciastra assist students in preparing for?</option>
+                <option value=" what distinguishes sciastra's mentors, and where are they from?" > what distinguishes sciastra's mentors, and where are they from?</option>
+                <option value="can you name a few institutes for which sciastra provides comprehensive guidance?">can you name a few institutes for which sciastra provides comprehensive guidance?</option>
+                <!-- Add more questions as needed -->
+            </select>
+            <button id="chatbot-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    </section>   
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="./main.js"></script>
+    </body>
+</html>
